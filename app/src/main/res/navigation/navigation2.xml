@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation2"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.chtigatpcempatnavigation.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentLupaPassword"
+            app:destination="@id/fragmentLupaPassword" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentRegister"
+            app:destination="@id/fragmentRegister" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentChatcs"
+            app:destination="@id/fragmentChatcs" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentHelp"
+            app:destination="@id/fragmentHelp" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.chtigatpcempatnavigation.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragmentLupaPassword"
+        android:name="com.example.chtigatpcempatnavigation.FragmentLupaPassword"
+        android:label="fragment_lupa_password"
+        tools:layout="@layout/fragment_lupa_password" />
+    <fragment
+        android:id="@+id/fragmentRegister"
+        android:name="com.example.chtigatpcempatnavigation.FragmentRegister"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/fragmentChatcs"
+        android:name="com.example.chtigatpcempatnavigation.FragmentChatcs"
+        android:label="fragment_chatcs"
+        tools:layout="@layout/fragment_chatcs" />
+    <fragment
+        android:id="@+id/fragmentHelp"
+        android:name="com.example.chtigatpcempatnavigation.FragmentHelp"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+</navigation>
